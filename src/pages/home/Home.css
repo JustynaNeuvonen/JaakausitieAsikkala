@@ -1,0 +1,50 @@
+
+.bigCard {
+    width: 70%;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+    margin: 50px  auto;
+}
+
+.cardSplit {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.cardPicture {
+    
+    flex: 0 0 70%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.cardPicture img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    border-radius: 0 0 0 0; /* Only round the left corners */
+    object-fit: cover;
+    display: block;
+}
+.cardText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;  
+}
+.cardText h1 {
+    margin-bottom: 20px; 
+}
+
+.cardPicture img {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0; /* Only round the left corners */
+}
