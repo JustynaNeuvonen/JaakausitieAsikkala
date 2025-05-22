@@ -26,6 +26,7 @@ a{
   justify-content: space-between;
   align-items: center;
   padding: 15px 8%;
+  border-bottom: 1px solid #ccc;
 
 }
 .navbar ul{
@@ -43,14 +44,44 @@ body{
 }
 
 .container{
-
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
     font-size: 24px;
-    font-weight: 300; /* Light */
+    font-weight: 300 Light;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300 Light;
+}
+.footer{
+  background: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+   border-top: 1px solid #ccc;
+}
+.footerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;      
+  max-width: 600px;             
+  margin: 0 auto;            
+  gap: 32px; 
+             
+}
+
+.footerInfo img {
+  margin-right: 0;              /* Remove old margin */
+}
+
+.footerInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between paragraphs */
 }
