@@ -1,9 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
-//import {Button} from '../components/Button'
-//import {Dropdown} from '../components/Dropdown'
-//import { useState } from 'react'
+import Dropdown from '../components/Dropdown'
 
 const Navbar = () => {
   return (
@@ -13,12 +11,15 @@ const Navbar = () => {
       </Link>
 
       <ul>
-        <Link to='/jaakausi'><li>Jääkausi</li></Link>
-        <Link to='/jaakausitie'><li>Jääkausitie</li></Link>
-        <button>Paikkat</button>
-        <button>Lang</button>
-        <Link to='/tekijat'><li>Tekijät</li></Link> 
-        </ul>  
+        <li><Link to='/jaakausi'>Jääkausi</Link></li>
+        <li><Link to='/jaakausitie'>Jääkausitie</Link></li>
+        <li className="dropdown-parent">
+          Paikkat
+          <Dropdown />
+        </li>
+        <li>Lang</li>
+        <li><Link to='/tekijat'>Tekijät</Link></li>
+      </ul>  
     </div>
   )
 }

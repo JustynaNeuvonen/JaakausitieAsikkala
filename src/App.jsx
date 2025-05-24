@@ -6,6 +6,14 @@ import Jaakausi from './pages/jaakausi/Jaakausi'
 import Jaakausitie from './pages/jaakausitie/Jaakausitie'
 import Tekijat from './pages/tekijat/Tekijat'
 import Rootlayout from './components/layout/Rootlayout'
+import Vaaksynjoki from './pages/vaaksynjoki/Vaaksynjoki'
+import Vesivehmaankangas from './pages/vesivehmaankangas/Vesivehmaankangas'
+import Tallukanmaki from './pages/tallukanmaki/Tallukanmaki'
+import Aurinkovuori from './pages/aurinkovuori/Aurinkovuori'
+import Syrjansupat from './pages/syrjansupat/Syrjansupat'
+import Pulkkilanharju from './pages/pulkkilanharju/Pulkkilanharju'
+import Kalkkinen from './pages/kalkkinen/Kalkkinen'
+
 
 const App = () => {
 
@@ -16,6 +24,14 @@ const App = () => {
         <Route path='jaakausi' element={<Jaakausi />} />
         <Route path='jaakausitie' element={<Jaakausitie />} />
         <Route path='tekijat' element={<Tekijat />} />
+        <Route path='vaaksynjoki' element={<Vaaksynjoki />} />
+        <Route path='vesivehmaankangas' element={<Vesivehmaankangas />} />
+        <Route path='tallukanmaki' element={<Tallukanmaki />} />
+        <Route path='aurinkovuori' element={<Aurinkovuori />} />
+        <Route path='syrjansupat' element={<Syrjansupat />} />
+        <Route path='pulkkilanharju' element={<Pulkkilanharju />} />
+        <Route path='kalkkinen' element={<Kalkkinen />} />
+
       </Route>
     )
   )

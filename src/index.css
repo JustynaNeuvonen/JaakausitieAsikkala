@@ -19,9 +19,9 @@ a{
   color: inherit;
 }
 .navbar{
-  width: 100%;
+  width: 100%; 
   background: black;
-  color: white;
+  color: white; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,10 +33,19 @@ a{
   padding: 10px 30 px;
   border-radius: 30px;
 }
-.navbar ul li{
-  display: inline-block;
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar > ul > li {
+  position: relative;
   padding: 5px 10px;
   margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
 body{
   background: black;
@@ -84,4 +93,40 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 8px; /* Space between paragraphs */
+}
+
+/* Dropdown menu styles */
+.dropdown-parent .Dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: black;
+  min-width: 180px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  z-index: 100;
+  padding: 0;
+}
+
+.dropdown-parent:hover .Dropdown {
+  display: block;
+}
+
+.Dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Dropdown li {
+  display: block;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: black;
+}
+
+.Dropdown li:hover {
+  background: #eee;
 }
