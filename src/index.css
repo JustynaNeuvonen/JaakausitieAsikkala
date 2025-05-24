@@ -86,13 +86,13 @@ h2 {
 }
 
 .footerInfo img {
-  margin-right: 0;              /* Remove old margin */
+  margin-right: 0;              
 }
 
 .footerInfo div {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Space between paragraphs */
+  gap: 8px; 
 }
 
 /* Dropdown menu styles */
@@ -101,8 +101,8 @@ h2 {
   position: absolute;
   top: 100%;
   left: 0;
-  background: white;
-  color: black;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   min-width: 180px;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
@@ -124,9 +124,13 @@ h2 {
   display: block;
   padding: 10px 16px;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .Dropdown li:hover {
-  background: #eee;
+  background: #27355b;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
