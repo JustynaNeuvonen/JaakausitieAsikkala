@@ -134,3 +134,75 @@ h2 {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+}
+
+/*-----Media Queries-----*/
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: row;         /* Align logo and menu icon in a row */
+    align-items: center;         /* Vertically center them */
+    justify-content: space-between; /* Space between logo and menu icon */
+    padding: 10px 10px;
+  }
+  .navbar ul {
+    display: none;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #27355b;
+    z-index: 1000; 
+    width: 0px;
+    padding-top: 70px;
+    transition: 0.5s;
+    bottom: 0;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  .navbar ul:not(.hide-mobile-menu) {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  .navbar > ul > li {
+    display: block;
+    margin: 25px 40px;
+    justify-content: flex-start; 
+    text-align: left;           
+  }
+  
+  .footerInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dropdown-parent .Dropdown {
+    position: static;
+    display: block;
+    background: #27355b;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 0;
+  }
+  .menu-icon {
+    display: block;
+    position: static;            /* Remove fixed positioning */
+    top: auto;
+    right: auto;
+    z-index: auto;
+    margin-right: 16px;          /* Optional: space on the right */
+    cursor: pointer;
+  } 
+  .hide-mobile-menu {
+    right: -200px; 
+  }
+  .navbar img[alt=""] {
+    width: 80px !important;
+    padding: 10px 0 10px 16px;
+    height: auto;
+  }
+}
