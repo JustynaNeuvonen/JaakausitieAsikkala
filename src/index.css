@@ -205,4 +205,11 @@ h2 {
     padding: 10px 0 10px 16px;
     height: auto;
   }
+  .menu-icon {
+    z-index: 2000;
+    position: relative; /* or static if you want it in the flow */
+  }
+  .navbar ul {
+    z-index: 1000;
+  }
 }
