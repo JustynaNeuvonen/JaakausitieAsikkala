@@ -13,7 +13,7 @@ import Aurinkovuori from './pages/aurinkovuori/Aurinkovuori'
 import Syrjansupat from './pages/syrjansupat/Syrjansupat'
 import Pulkkilanharju from './pages/pulkkilanharju/Pulkkilanharju'
 import Kalkkinen from './pages/kalkkinen/Kalkkinen'
-
+import './i18next'
 
 const App = () => {
 

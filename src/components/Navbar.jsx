@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import menu_icon from '../assets/menu_icon.png'
 import { Link } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
+import { useTranslation } from 'react-i18next';
 
 
 const Navbar = () => {
@@ -23,6 +24,12 @@ const Navbar = () => {
     mobileMenu ? setMobileMen(false) : setMobileMen(true);
   }
 
+  const { i18n } = useTranslation();
+ 
+const toggleLanguage = () => {
+  const newLang = i18n.language === 'en' ? 'fi' : 'en';
+  i18n.changeLanguage(newLang);
+};
 
   return (
     <div className='navbar'>
@@ -49,7 +56,11 @@ const Navbar = () => {
           {/* Show dropdown if open or on desktop hover */}
           {(dropdownOpen || window.innerWidth > 750) && <Dropdown />}
         </li>
-        <li>Lang</li>
+        <li>
+        <button onClick={toggleLanguage} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
+          {i18n.language === 'en' ? 'FI' : 'EN'}
+        </button>
+        </li>
         <li><Link to='/tekijat'>Tekijät</Link></li>
       </ul>  
       
