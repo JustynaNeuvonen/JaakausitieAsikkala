@@ -1,0 +1,60 @@
+.jaakausi-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jaakausi-heading {
+  margin-bottom: 18px;
+  margin-top: 32px;
+}
+
+.jaakausi-paragraph {
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.jaakausi-flex-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.jaakausi-flex-text {
+  flex: 2;
+}
+
+.jaakausi-flex-image {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.jaakausi-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.jaakausi-image-caption {
+  margin-top: 12px;
+  font-size: 0.95em;
+  color: #ededed;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .jaakausi-container {
+    width: 95%;
+  }
+  .jaakausi-flex-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .jaakausi-flex-image {
+    width: 100%;
+    min-width: 0;
+  }
+}

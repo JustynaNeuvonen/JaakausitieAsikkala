@@ -4,6 +4,7 @@ import menu_icon from '../assets/menu_icon.png'
 import { Link } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 import { useTranslation } from 'react-i18next';
+import languageIcon from '../assets/language.png';
 
 
 const Navbar = () => {
@@ -30,6 +31,7 @@ const toggleLanguage = () => {
   const newLang = i18n.language === 'en' ? 'fi' : 'en';
   i18n.changeLanguage(newLang);
 };
+ const { t } = useTranslation(); 
 
   return (
     <div className='navbar'>
@@ -38,8 +40,8 @@ const toggleLanguage = () => {
       </Link>
       <img src={menu_icon} alt="Menu" width="30px" className='menu-icon' onClick={toggleMenu} ></img>
       <ul className={mobileMenu?'':'hide-mobile-menu'}>
-        <li><Link to='/jaakausi'>Jääkausi</Link></li>
-        <li><Link to='/jaakausitie'>Jääkausitie</Link></li>
+        <li><Link to='/jaakausi'>{t('Nav1')}</Link></li>
+        <li><Link to='/jaakausitie'>{t('Nav2')}</Link></li>
         <li
           className="dropdown-parent"
           onClick={e => {
@@ -52,16 +54,17 @@ const toggleLanguage = () => {
           onMouseEnter={() => window.innerWidth > 750 && setDropdownOpen(true)}
           onMouseLeave={() => window.innerWidth > 750 && setDropdownOpen(false)}
         >
-          Paikkat
+          {t('Nav3')}
           {/* Show dropdown if open or on desktop hover */}
           {(dropdownOpen || window.innerWidth > 750) && <Dropdown />}
         </li>
         <li>
         <button onClick={toggleLanguage} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>
+          <img src={languageIcon} alt="Language" width="20px" style={{ marginRight: '5px' }} />
           {i18n.language === 'en' ? 'FI' : 'EN'}
         </button>
         </li>
-        <li><Link to='/tekijat'>Tekijät</Link></li>
+        <li><Link to='/tekijat'>{t('Nav4')}</Link></li>
       </ul>  
       
     </div>

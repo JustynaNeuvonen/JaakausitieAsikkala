@@ -1,5 +1,27 @@
 {
         "welcome": "Tervetuloa",
-        "map": "Kartta",
-        "credits": "Tekijät"
-      }
+        "Nav1": "Jääkausi",
+        "Nav2": "Jääkausitie",
+        "Nav3": "Paikkat",
+        "Nav4": "Lähteet",
+        "Footer": "Tämä on Ometta Softworksin voittoa tavoittelematon hanke.",
+        "Hh1": "Asikkalan Jääkausitie: Matka Ajassa",
+        "Hp": "Asikkalan Jääkausitie opastaa matkailijoita Etelä-Päijänteen alueen dynaamisessa kehityksessä. Tämä 100 kilometrin pituinen reitti paljastaa jääkauden kiehtovan tarinan ja alueen järvien muodostumisen.",
+        "Jkh1": "JÄÄKAUSITIE KERTOO MAISEMAN SYNNYN TARINAN",
+        "Jkp1": "Jääkausitie käsittää joukon maastokohteita, joissa kulkija voi perehtyä suomalaisen maiseman ja luonnon kehitykseen. Päijät-Hämeen alueen maiseman synty kertoo paitsi suomalaisen myös yleisemminkin jääkausiajan maiseman synnystä. Kohteissa kuvatut tapahtumat perustuvat tutkimustietoon jääkausiajan kerrostumista, mannerjäätikön reunan liikkeistä, Itämeren ja Päijänteen vedenpinnan tasoista sekä eteläisen Suomen kasvillisuuden muutoksista.",
+        "Jkh2": "VÄÄKSYN MAISEMA ON POIKKEUKSELLISEN HAVAINNOLLINEN MUISTOMERKKI JÄÄKAUDESTA JA MANNERJÄÄTIKÖSTÄ",
+        "Jkp2": "Eteläisen Päijänteen seudulla maisema on jääkauden aikana syntynyt tällä seudulla jäätiköiden jäljet ovat paremmin näkyvissä kuin ehkä missään muualla Suomessa, jossa maiseman pääpiirteet yleensä määrää kallioperän korkokuva. Vääksyssä maiseman tärkeimmän osan muodostavat Toisen Salpausselän poikkeuksellisen komeat selänteet ja tasanteet. Ne ovat syntyneet jäätikköjokien kuljettamasta aineksesta jäätikön reunaan. Reunamuodostumien erikoisen suuri korkeus ja koko on seurausta jäätikköjokien tiheän, viuhkamaisen verkon keskittymisestä eteläisen Päijänteen alueelle.",
+        "Jkh3": "JÄÄKAUSIAIKOJEN SYYT",
+        "Jkp3": "Jääkausiajat johtuvat mannerlaattojen liikkeistä, jotka estävät tai edistävät merivirtojen ja maapalloa kiertävien tuulivyöhykkeiden toimintaa. Mannerlaattojen törmäyksissä syntyvät vuoristot ja ylängöt vaikuttavat myös jääkausien esiintymiseen. Nykyisen jäätiköitymisajan syinä pidetään meriyhteyksien katkeamista Väli-Amerikassa ja toisaalta Pohjoisen Jäämeren ja Tyynenmeren välisen yhteyden heikkenemistä. Samanaikaisesti maapallon ilmastoa viilensivät myös Alpiininen vuorijonopoimutus ja Tiibetin ylängön synty. Mannerjäätiköt alkoivat levitä laajoille alueille Euroopassa noin 700 000 vuotta sitten. Tätä ennen oli vaiheittainen ilmaston kylmeneminen alkanut noin 2,5 miljoonaa vuotta sitten. Jääkausiaikoinakin ilmasto on välillä lämmin, kuten nykyisenä lämpimänä aikana, viime jääkauden jälkeen. Ilmaston vaihtelu johtuu perimmältään maapallolle tulevan auringon säteilyn määrän vaihtelusta. Säteilyn määrään vaikuttavat mm. maapallon kiertoradan soikeuden vaihtelu ja pyörimisakselin kaltevuuden ja suunnan vaihtelut. Kylmät kaudet kestävät noin 100 000 vuotta ja lämpimät vaiheet noin 10 000 vuotta.VIIME JÄÄKAUSI alkoi pohjoisessa Euroopassa noin 115 000 vuotta sitten. Sen kylmin vaihe oli noin 20 000 vuotta sitten, jolloin jäätiköt olivat tämän jääkauden aikana laajimmillaan. MANNERJÄÄTIKÖN SULAMISVAIHEESSA noin 12 700 vuotta sitten ilmasto oli lämmin ja mannerjäätikön reuna perääntyi jatkuvasti. Asikkalassa jäätikön reuna oli jo vetäytynyt Vääksyn alueen pohjoispuolelle, kun ilmasto yhtäkkiä viileni. Alkoi SALPAUSSELKIEN synty kylmässä ilmastovaiheessa, josta käytetään nimeä Nuorempi Dryaskausi. Ilmaston kylmeneminen oli maapallon laajuinen ilmiö. Kylmän ilmastovaiheen syitä on tutkittu paljon, jotta ymmärrettäisiin nykyisten ilmastomuutosten syitä ja seurauksia. Varmaa syytä ei ole voitu osoittaa, mutta valtamerien virtauksien heikkenemiset ovat ilmeisesti vaikuttaneet ilmaston kylmenemiseen erityisesti pohjoisen Atlantin ympäristössä.",
+        "Jkh4": "MAISEMAN MUUTOKSET AIKOJEN KULUESSA: PÄIJÄNTEEN KEHITYS",
+        "Jkp4": "Jääkauden jälkeisenä aikana muutokset Päijänteen maisemassa ovat olleet suuria: Pian mannerjäätikön reunan vetäytymisen jälkeen muinaisen Päijänteen veden pinta oli Vääksyssä paljon nykyistä alempana ja vedet virtasivat pohjoiseen. Lasku Aurinkovuoren laelta, joka kerrostui Baltian jääjärven tasoon oli peräti 80 metriä. Vähitellen maankohoaminen nosti pohjoisessa maankamaraa ylemmäs ja vedenpinta nousi Vääksyn seudulla noin 20 metriä. Nousu päättyi, kun Kymijoki syntyi ja Päijänteen seudun vedet alkoivat virrata kaakkoon. Vedenpinta alkoi laskea ja on ollut lähes nykyisessä tasossa viimeisen noin 7 000 vuoden ajan.",
+        "Jkh5": "LUONTO MUUTTUU JA IHMINEN VAIKUTTAA MUUTOKSEEN",
+        "Jkp5": "Jääkauden jälkeen ilmaston lämpöhuipun aikaan jalot lehtipuut olivat eteläisessä Suomessa yleisiä. Vähitellen soistuminen kiihtyi kosteanviileän ilmastovaiheen alkaessa. Kuusi levisi Suomeen idästä viimeisenä pääpuulajinamme. Kuusen leviäminen kertoo ilmaston vähittäistä kääntymistä kohti viilenevää ilmastovaihetta. Auringon säteilymäärä on nyt jo selvästi pienempi kuin jääkauden lopulla. Olemme jo siis pikku hiljaa menossa kohti seuraavaa jääkautta.",
+        "Jkp6": "FT. J-P Palmu",
+        "Jkp7": "J-P Palmu. Jääkausitie Asikkala Ice Age Route. 2001, Markpoint Oy, ISBN 951 -97789 - 4, ISSN 1458 – 2902",
+        "Jkpic": "Eurooppa viimeisen jääkauden aikana, noin 20 000–70 000 vuotta ennen nykypäivää."
+}
+      
+
+      
+      
