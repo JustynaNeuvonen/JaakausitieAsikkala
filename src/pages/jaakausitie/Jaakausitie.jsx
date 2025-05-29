@@ -40,43 +40,49 @@ const Jaakausitie = () => {
             title: t('Card1Title'),
             desc: t('Card1Desc'),
             img: vaaksy,
-            link: 'vaaksynjoki'
+            link: '/vaaksynjoki'
+        
           },
           {
             title: t('Card2Title'),
             desc: t('Card2Desc'),
             img: aurinkovuori,
-            link: 'aurinkovuori'
+            link: '/aurinkovuori'
+        
           },
           {
             title: t('Card3Title'),
             desc: t('Card3Desc'),
             img: tallukanmaki,
-            link: 'tallukanmaki'
+            link: '/tallukanmaki'
+               
           },
           {
             title: t('Card4Title'),
             desc: t('Card4Desc'),
             img: syrjansupat,
-            link: 'syrjansupat'
+            link: '/syrjansupat' 
+             
           },
           {
             title: t('Card5Title'),
             desc: t('Card5Desc'),
             img: pulkkilanharju,
-            link: 'pulkkilanharju'
+            link: '/pulkkilanharju'
+             
           },
           {
             title: t('Card6Title'),
             desc: t('Card6Desc'),
             img: kalkkinen,
-            link: 'kalkkinen'
+            link: '/kalkkinen'
+            
           },
           {
             title: t('Card7Title'),
             desc: t('Card7Desc'),
             img: vesivehmaankangas,
-            link: 'vesivehmaankangas'
+            link:'/vesivehmaankangas' 
           }
         ].map((card, i) => (
           <div className="smallCard" key={i}>

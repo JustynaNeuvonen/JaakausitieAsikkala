@@ -94,6 +94,30 @@
     border-radius: 0 12px 12px 0;
     display: block;
 }
+.readMoreBtn {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    color: #27344b;
+    background: transparent;
+    border: none;
+    padding: 0 10px 0 10px;   
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px;
+    display: inline-block;
+    width: auto;
+    box-sizing: border-box;
+    margin: 0;
+    align-self: flex-start;   
+}
+.readMoreBtn:hover,
+.readMoreBtn:focus {
+    background: #27355b;
+    color: #fff;
+    text-decoration: none;
+}
 
 /*------media queries------*/
 @media (max-width: 950px) {
