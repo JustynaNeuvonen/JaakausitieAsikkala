@@ -1,11 +1,25 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import aurinkovuori1 from '../../assets/Aurinkovuori1.jpg';
+import aurinkovuori2 from '../../assets/Aurinkovuori2.jpg';
+import aurinkovuori3 from '../../assets/Aurinkovuori3.jpg';
+import InfoCardWithGallery from '../../components/InfoCardWithGallery';
 
 function Aurinkovuori() {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h1>Aurinkovuori</h1>
-      <p>Aurinkovuori is a mountain located in the municipality of Ruokolahti, Finland. It is part of the Salpausselkä ridge, which was formed during the last Ice Age. The mountain is known for its scenic views and hiking trails.</p>   
-    </div>
+    <InfoCardWithGallery mainImg={aurinkovuori1} galleryImgs={[aurinkovuori2,aurinkovuori3 , aurinkovuori1 ,]}>
+      <h1>{t('Aurinkoh1')}</h1>  
+      <h2>{t('Aurinkoh2')}</h2>
+      <p>{t('Aurinkoh3')}</p>
+      <p>{t('Aurinkop1')}</p>
+      <p>{t('Aurinkop2')}</p>
+      <p>{t('Aurinkop3')}</p>
+      <p>{t('Aurinkop4')}</p>
+      <p>{t('Aurinkop5')}</p>
+      <p>{t('Aurinkop6')}</p>
+      <p>{t('Aurinkop7')}</p>
+      </InfoCardWithGallery>
   )
 }
 
