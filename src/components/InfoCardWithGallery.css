@@ -1,0 +1,156 @@
+.infoCardContainer {
+  width: 80vw;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #000000;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoCardMainImg {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.infoCardContent {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.infoCardContent h1,
+.infoCardContent h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.infoCardContent p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.infoCardGallery {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.infoCardGalleryImg {
+  width: 40vw;
+  max-width: 400px;
+  height: 40vw;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eee;
+  margin: 0 8px;
+  transition: transform 0.2s;
+}
+
+.infoCardGalleryImg:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.infoCardGallerySlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.galleryNavBtn {
+  background: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px;         
+  width: 36px;
+  height: 36px;
+  font-size: 2em;              
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;            
+  align-items: center;      
+  justify-content: center;   
+  padding: 0;               
+  line-height: 1;              
+  vertical-align: middle;   
+}
+.galleryNavBtn:hover {
+  background: #27355b;
+}
+
+.galleryModal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.galleryModalImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+
+.galleryImagesWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .infoCardContainer {
+    width: 96vw;
+    padding: 18px 4vw;
+  }
+  .infoCardGalleryImg {
+    width: 48vw;
+    max-width: 320px;
+    height: 48vw;
+    max-height: 320px;
+  }
+  .galleryImagesWrapper img:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .infoCardContainer {
+    width: 100vw;
+    padding: 8px 0;
+  }
+  .infoCardGalleryImg {
+    width: 90vw;
+    max-width: 98vw;
+    height: 48vw;
+    max-height: 220px;
+    margin: 0 0 12px 0;
+  }
+  .galleryImagesWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .infoCardGallerySlider {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .galleryNavBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5em;
+  }
+}
