@@ -19,7 +19,28 @@
   "Jkp5": "After the Ice Age during the climatic optimum, broad-leaved trees such as oak were common in southern Finland. Gradually paludification started after the climate took a turn towards a relatively colder and moister regime. The last major tree species to reach Finland was the Norway spruce, which spread from the east. Its spreading was due to the slow climatic change towards a colder and moister climate. Clearly less solar radiation reaches the northern hemisphere now than during the deglaciation period. We are towards the next ice age.",
   "Jkp6": "Ph.D. J-P Palmu",
   "Jkp7": "J-P Palmu. Jääkausitie Asikkala Ice Age Route. 2001, Markpoint Oy, ISBN 951 -97789 - 4, ISSN 1458 – 2902",
-  "Jkpic": "Europe during its last glaciation, about 20,000 to 70,000 years before present."
+  "Jkpic": "Europe during its last glaciation, about 20,000 to 70,000 years before present.",
+    "Jth1": "Asikkala Ice Age Route: A Journey Through Time",
+  "Jtp1": "1.Vääksynjoki river and Vääaksy Canal",
+  "Jtp2": "2.Aurinkovuori",
+  "Jtp3": "3.Tallukanmäki",     
+  "Jtp4": "4.Syrjänsupat",
+  "Jtp5": "5.Pulkkilanharju",
+  "Jtp6": "6.Kalkkinen Canal and Rapid",
+  "Jtp7": "7.Vesivehmaankangas",
+  "Card1Title":"Vääksynjoki river and Vääaksy Canal",
+  "Card1Desc": "The Vääksynjoki River has a unique history, essentially forming in two distinct phases. Following the retreat of the glaciers, the water level in the Asikkala region experienced a rapid decline..",
+  "Card2Title":"Aurinkovuori",
+  "Card2Desc": "The Aurinkovuori, a striking ridge of sand and gravel, a direct legacy of the last ice age. This impressive formation is part of the extensive II Salpausselkä system, a series of end moraines...",
+  "Card3Title":"Tallukanmäki",
+  "Card3Desc": "The Vääksynjoki River has a unique history, essentially forming in two distinct phases. Following the retreat of the glaciers, the water level in the Asikkala region experienced a rapid decline...",
+  "Card4Title":"Syrjänsupat",
+  "Card4Desc": "The Syrjänsupat area shows how glacial meltwater built up landforms at the edge of an ice sheet. A meltwater flowing from the deeper part of the ice towards the edge ...",
+  "Card5Title":"Pulkkilanharju",
+  "Card5Desc": "The Pulkkilanharju esker is a long, slender ridge, a direct result of deposition by glacial meltwaters. It's part of a larger meltwater system that developed in the southern part of the Lake Päijänne ...",
+  "Card6Title":"Kalkkinen Canal and Rapid",
+  "Card6Desc": "The story of the Kalkkinen Rapid is a fascinating example of how postglacial land uplift has dramatically altered water flow over millennia. Ten thousand years ago, the water at Kalkkinen ...",
+  "Card7Title":"Vesivehmaankangas",
+  "Card7Desc": "Vesivehmaankangas is a distinctive landform, an ice marginal delta primarily built by the deposition of sediments from glacial meltwaters. This extensive heath is part of the II Salpausselkä ...",
+  "Button":"Read more"
 }
-
-

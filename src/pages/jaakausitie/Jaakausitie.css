@@ -1,0 +1,167 @@
+.bigCard1 {
+    width: 70%;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+    margin: 50px auto 0px auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.cardSplit1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+.cardPicture1 {
+    flex: 0 0 50%;      
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: #fff;
+    overflow: hidden;
+}
+
+.cardPicture1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; 
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.cardText1 {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 90px 50px 50px 50px;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%; 
+}
+.cardText1 h1 {
+    margin-bottom: 20px; 
+}
+
+
+.smallCardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+    align-items: stretch; 
+    grid-auto-rows: 1fr;
+}
+
+.smallCard {
+    background: #fff;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    padding: 0;
+    
+    min-height: 180px;
+}
+
+.smallCardContent {
+    flex: 1 1 0;
+    padding: 18px 18px 24px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.smallCardImg {
+    width: 50%;              
+    height: 100%;            
+    object-fit: cover;       
+    border-radius: 0 12px 12px 0;
+    display: block;
+}
+
+/*------media queries------*/
+@media (max-width: 950px) {
+    .bigCard1 {
+        width: 98%;
+        margin: 20px auto;
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+    }
+    .cardSplit1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cardPicture1 {
+        width: 100%;
+        min-width: 0;
+        height: auto; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardPicture1 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: none;
+        object-fit: contain;
+        border-radius: 0 0 15px 15px;
+        display: block;
+    }
+    .cardText1 {
+        padding: 40px 20px 30px 20px;
+        height: auto;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-y: visible;
+    }
+}
+@media (max-width: 960px) {
+    .smallCardsGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .smallCardsGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .smallCard {
+        flex-direction: column;      
+        height: auto;                
+        min-height: unset;
+    }
+    .smallCardContent {
+        order: 1;                   
+        width: 100%;
+        padding: 18px 12px 18px 12px;
+        overflow: visible;           
+    }
+    .smallCardImg {
+        order: 2;                    
+        width: 100%;
+        height: 140px;               
+        border-radius: 0 0 12px 12px;
+        object-fit: cover;
+        display: block;
+    }
+}
