@@ -1,12 +1,23 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import InfoCardWithGallery from '../../components/InfoCardWithGallery';
+import syrjan1 from '../../assets/Syrjansupat1.jpg';
+import syrjan2 from '../../assets/Syrjansupat2.png'; 
+import syrjan3 from '../../assets/Syrjansupat3.jpg';
 
 function Syrjansupat() {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h1>Syrjansupat</h1>      
-
-        <p>Syrjansupat is a village in the municipality of Ruokolahti, Finland. It is located near the border with Russia and is known for its beautiful landscapes and outdoor recreational opportunities. The village has a rich history and is home to several historical sites.</p>
-    </div>
+    <InfoCardWithGallery mainImg={syrjan1} galleryImgs={[syrjan2, syrjan3, syrjan1,]}>
+      <h1>{t('Sh1')}</h1>  
+      <p>{t('Sh2')}</p>
+      <p>{t('Sp1')}</p>
+      <p>{t('Sp2')}</p>
+      <h1>{t('Sh3')}</h1>
+      <p>{t('Sp3')}</p>
+      <p>{t('Sp4')}</p>
+      
+      </InfoCardWithGallery>
   )
 }
 

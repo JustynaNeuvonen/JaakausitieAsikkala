@@ -18,6 +18,7 @@ function Vaaksynjoki() {
       <p>{t('Vaaksyp2')}</p>
       <p>{t('Vaaksyp3')}</p>
       <p>{t('Vaaksyp4')}</p>
+      <p>{t('Vaaksyp5')}</p>
     </InfoCardWithGallery>
   )
 }

@@ -1,14 +1,26 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import InfoCardWithGallery from '../../components/InfoCardWithGallery';
+import pulkkilanharju1 from '../../assets/pulkkilanharju1.png';
+import pulkkilanharju2 from '../../assets/pulkkilanharju2.jpg';
+import pulkkilanharju3 from '../../assets/pulkkilanharju3.png';
 
 function Pulkkilanharju() {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h1>Pulkkilanharju</h1>
-      <p>Pulkkilanharju is a ridge located in the municipality of Ruokolahti, Finland. It is part of the Salpausselkä ridge, which was formed during the last Ice Age. The ridge is known for its scenic views and hiking trails.</p>
-      <p>The ridge is a popular destination for outdoor activities such as hiking, biking, and birdwatching. The area is also home to various species of flora and fauna, making it a great spot for nature enthusiasts.</p>
-      <p>Visitors can enjoy panoramic views of the surrounding landscape from the top of the ridge, making it a perfect spot for photography and sightseeing.</p>
-    </div>
+    <InfoCardWithGallery mainImg={pulkkilanharju1} galleryImgs={[pulkkilanharju2, pulkkilanharju3, pulkkilanharju1,]}>
+      <h1>{t('Ph1')}</h1>  
+      <p>{t('Ph2')}</p>
+      <p>{t('Pp1')}</p>
+      <p>{t('Pp2')}</p>
+      <p>{t('Pp3')}</p>
+      <p>{t('Pp4')}</p>
+      <p>{t('Pp5')}</p>
+      <p>{t('Pp6')}</p> 
+      
+      </InfoCardWithGallery>
   )
+  
 }
 
 export default Pulkkilanharju

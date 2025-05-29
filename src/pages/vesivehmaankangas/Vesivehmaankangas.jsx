@@ -1,12 +1,24 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import InfoCardWithGallery from '../../components/InfoCardWithGallery';
+import vesi1 from '../../assets/Vesivehmaankangas1.jpg';
 
 function Vesivehmaankangas() {
+ const { t } = useTranslation();
   return (
-    <div>
-        <h1>Vesivehmaankangas</h1>
-        <p>Vesivehmaankangas is a forested area located in the municipality of Ruokolahti, Finland. It is known for its diverse flora and fauna, as well as its recreational opportunities such as hiking and birdwatching.</p>
-        <p>The area is part of the larger Salpausselkä ridge, which was formed during the last Ice Age. The ridge is characterized by its unique geological features and is home to many rare species of plants and animals.</p>    
-    </div>
+    <InfoCardWithGallery mainImg={vesi1} galleryImgs={[vesi1]}>
+      <h1>{t('Vesih1')}</h1>  
+      <p>{t('Vesih2')}</p>
+      <p>{t('Vesip1')}</p>
+      <p>{t('Vesip2')}</p>
+      <p>{t('Vesip3')}</p>
+      <p>{t('Vesip4')}</p>
+      <p>{t('Vesip5')}</p>
+      <p>{t('Vesip6')}</p>
+      <p>{t('Vesip7')}</p>
+    
+      
+      </InfoCardWithGallery>
   )
 }
 

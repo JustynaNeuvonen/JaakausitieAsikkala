@@ -1,13 +1,26 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import InfoCardWithGallery from '../../components/InfoCardWithGallery';
+import tallu1 from '../../assets/Tallukanmaki1.png';
+import tallu2 from '../../assets/Tallukanmaki2.jpg';
+import tallu3 from '../../assets/Tallukanmaki3.png';
 
 function Tallukanmaki() {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h1>Tallukanmäki</h1> 
-
-        <p>Tallukanmäki is a village in the municipality of Ruokolahti, Finland. It is located near the border with Russia and is known for its beautiful landscapes and outdoor recreational opportunities. The village has a rich history and is home to several historical sites.</p>
-    </div>
+    <InfoCardWithGallery mainImg={tallu1} galleryImgs={[tallu2, tallu3 ,tallu1,]}>
+      <h1>{t('Talluh1')}</h1>  
+      <h2>{t('Talluh2')}</h2>
+      <p>{t('Talluh3')}</p>
+      <p>{t('Tallup1')}</p>
+      <p>{t('Tallup2')}</p>
+      <p>{t('Tallup3')}</p>
+      <p>{t('Tallup4')}</p>
+      <p>{t('Tallup5')}</p>
+      <p>{t('Tallup6')}</p>
+      <h1>{t('Tallup7')}</h1>
+      <p>{t('Tallup8')}</p>
+      </InfoCardWithGallery>
   )
 }
-
 export default Tallukanmaki
