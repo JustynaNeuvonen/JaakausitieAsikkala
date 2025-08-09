@@ -13,17 +13,3 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-Navbar ma podkreslenia w trybie hoover, zzrezygnowalam z zaznaczenia aktualnej pozycji bo wiele stron jest w rozwijanym menu. Navbar posiada logo jako link do home page, places z rozwijanym menu do 7 stron tego samego typu, zmiane jezyka angielski/finkski, pierwszy jezyk to finski. w wersji mobile, hamburger menu, podkreslany na hoover. 
-
-Footer - Informacja o tym, ze to projekt non-profit mojej firmy.
-
-Home - Card, nic specjalnego, Plaices posiada jedna duza karte ze statyczna mapa orz 7 mniejszych w 2 kolumnach. wszystkie karty maja wersje mobilna. 
-
-Podstony menu rozwijanego wsszystkie maja jednakowy layout.
-
-Ice Age - text skopiowany z ksiki, z podobn ilustracja. 
-Credits - moje chaotyczne linki do porzyczonych assetow.
-
-Ogolnie 7 podstron, plus Credits, Jaakausi, Jaakausitie, Home
-
-Eng-Fi tumaczenie.
