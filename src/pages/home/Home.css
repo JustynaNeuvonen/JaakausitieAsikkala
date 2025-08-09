@@ -4,6 +4,7 @@
     color: black;
     border-radius: 15px;
     margin: 50px  auto 0px auto;
+    margin-bottom: 50px;
 }
 
 .cardSplit {
@@ -49,6 +50,7 @@
     .bigCard {
         width: 90%;
         margin: 40px auto 5 auto;
+        margin-bottom: 40px;
     }
     .cardSplit {
         flex-direction: column;

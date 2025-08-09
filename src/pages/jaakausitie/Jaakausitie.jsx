@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import aurinkovuori from '../../assets/Aurinkovuori1.jpg';
 import vaaksy from '../../assets/Vaaksy1.jpg';
 import syrjansupat from '../../assets/Syrjansupat1.jpg';
-import tallukanmaki from '../../assets/Tallukanmaki1.png';
+import tallukanmaki from '../../assets/Tallukanmaki1.jpg';
 import pulkkilanharju from '../../assets/Pulkkilanharju1.png';
 import kalkkinen from '../../assets/Kalkkinen1.jpg';
 import vesivehmaankangas from '../../assets/Vesivehmaankangas1.jpg';
