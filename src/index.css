@@ -155,7 +155,7 @@ h2 {
     position: fixed;
     top: 0;
     right: 0;
-    background: #27355b;
+    background: #072743;
     z-index: 1000; 
     width: 0px;
     padding-top: 70px;
@@ -183,7 +183,7 @@ h2 {
   .dropdown-parent .Dropdown {
     position: static;
     display: block;
-    background: #27355b;
+    background: #072743;
     box-shadow: none;
     border-radius: 0;
     min-width: 0;

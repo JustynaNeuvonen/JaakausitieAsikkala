@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import logo from '../assets/logo.png'
 import menu_icon from '../assets/menu_icon.png'
 import { Link } from 'react-router-dom'
@@ -9,21 +9,26 @@ import languageIcon from '../assets/language.png';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenu, setMobileMen] = useState(false);
+  const menuRef = useRef(null);
 
   // Close dropdown when clicking outside (optional, for better UX)
   React.useEffect(() => {
     const handleClick = (e) => {
       if (!e.target.closest('.dropdown-parent')) setDropdownOpen(false);
+      // Close mobile menu if click outside
+      if (mobileMenu && menuRef.current && !menuRef.current.contains(e.target) && !e.target.classList.contains('menu-icon')) {
+        setMobileMen(false);
+      }
     };
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
-  }, []);
+  }, [mobileMenu]);
 
 
-  const[ mobileMenu, setMobileMen ] = useState(false);
   const toggleMenu = () => {
-    mobileMenu ? setMobileMen(false) : setMobileMen(true);
-  }
+    setMobileMen((prev) => !prev);
+  };
 
   const { i18n } = useTranslation();
  
@@ -38,8 +43,8 @@ const toggleLanguage = () => {
       <Link to='/'>
         <img src={logo} alt="" width="100px"/>
       </Link>
-      <img src={menu_icon} alt="Menu" width="30px" className='menu-icon' onClick={toggleMenu} ></img>
-      <ul className={mobileMenu?'':'hide-mobile-menu'}>
+      <img src={menu_icon} alt="Menu" width="30px" className='menu-icon' onClick={toggleMenu} />
+      <ul ref={menuRef} className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li><Link to='/jaakausi'>{t('Nav1')}</Link></li>
         <li><Link to='/jaakausitie'>{t('Nav2')}</Link></li>
         <li

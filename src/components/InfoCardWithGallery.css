@@ -129,8 +129,9 @@
 
 @media (max-width: 600px) {
   .infoCardContainer {
-    width: 100vw;
+    width: 80vw;
     padding: 8px 0;
+   
   }
   .infoCardGalleryImg {
     width: 90vw;
@@ -153,4 +154,5 @@
     height: 32px;
     font-size: 1.5em;
   }
+
 }
