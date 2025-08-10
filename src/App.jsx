@@ -33,9 +33,7 @@ const App = () => {
         <Route path='kalkkinen' element={<Kalkkinen />} />
       </Route>
     ),
-    {
-      basename: '/JaakausitieAsikkala'
-    }
+   
   )
 
 
