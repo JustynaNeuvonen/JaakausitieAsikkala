@@ -31,9 +31,11 @@ const App = () => {
         <Route path='syrjansupat' element={<Syrjansupat />} />
         <Route path='pulkkilanharju' element={<Pulkkilanharju />} />
         <Route path='kalkkinen' element={<Kalkkinen />} />
-
       </Route>
-    )
+    ),
+    {
+      basename: '/JaakausitieAsikkala'
+    }
   )
 
 
